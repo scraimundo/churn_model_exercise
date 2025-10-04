@@ -49,7 +49,7 @@ For this exercise, a simplified 4-layer BigQuery structure is used:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repo-url>
+    git clone https://github.com/scraimundo/churn_model_exercise.git
     cd provider_churn_prediction
     ```
 
@@ -155,7 +155,7 @@ Follow these steps in order to populate the BigQuery datasets:
 
 ## Trade-offs and Assumptions
 
-*   **Simplification**: Many aspects (e.g. full error handling, SCD Type 2, multiple `SNAPSHOT_DATE`s for AI, production-ready CI/CD) were simplified or omitted due to time constraints.
+*   **Simplification**: Many aspects (e.g. full error handling, SCD Type 2, multiple `snapshot_date`s for AI, production-ready CI/CD) were simplified or omitted due to time constraints.
 *   **No Live Looker**: `.lkml` files are conceptual; the demo focuses on the underlying SQL views.
 *   **PII/PHI**: Assumed no direct PII/PHI in `payments.csv` or `orders.csv` for the exercise. Real data would require specific handling.
 *   **Churn**: The rule was created based on orders.
